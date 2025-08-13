@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#game {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #222;
+}
+
+.player {
+  position: absolute;
+  bottom: 10px;
+  width: 100px;
+  height: 20px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+.block {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  animation: fall linear;
+}
+
+@keyframes fall {
+  from {
+    top: -30px;
+  }
+  to {
+    top: 100vh;
+  }
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
